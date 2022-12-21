@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	emperror.dev/errors v0.8.1
-	github.com/Azure/aad-pod-identity v1.8.8
+	github.com/Azure/aad-pod-identity v1.8.13
 	github.com/Azure/azure-sdk-for-go v63.3.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.25
 	github.com/Azure/go-autorest/autorest/adal v0.9.18
