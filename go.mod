@@ -4,10 +4,10 @@ go 1.18
 
 require (
 	emperror.dev/errors v0.8.1
-	github.com/Azure/aad-pod-identity v1.8.8
-	github.com/Azure/azure-sdk-for-go v63.3.0+incompatible
-	github.com/Azure/go-autorest/autorest v0.11.25
-	github.com/Azure/go-autorest/autorest/adal v0.9.18
+	github.com/Azure/aad-pod-identity v1.8.14
+	github.com/Azure/azure-sdk-for-go v67.1.0+incompatible
+	github.com/Azure/go-autorest/autorest v0.11.28
+	github.com/Azure/go-autorest/autorest/adal v0.9.21
 	github.com/Azure/go-autorest/autorest/azure/auth v0.5.11
 	github.com/appscode/go v0.0.0-20191119085241-0887d8ec2ecc
 	github.com/google/go-cmp v0.5.7
@@ -20,12 +20,12 @@ require (
 	github.com/slok/kubewebhook v0.11.0
 	github.com/spf13/viper v1.11.0
 	github.com/vdemeester/k8s-pkg-credentialprovider v1.22.4
-	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
+	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 	gopkg.in/yaml.v2 v2.4.0
-	k8s.io/api v0.23.5
-	k8s.io/apimachinery v0.23.5
-	k8s.io/client-go v0.23.5
-	k8s.io/component-base v0.23.5
+	k8s.io/api v0.23.14
+	k8s.io/apimachinery v0.23.14
+	k8s.io/client-go v0.23.14
+	k8s.io/component-base v0.23.14
 	k8s.io/klog/v2 v2.60.1
 	kmodules.xyz/client-go v0.0.0-20220404224906-af7b092cfac5
 	sigs.k8s.io/controller-runtime v0.11.2
@@ -97,7 +97,7 @@ require (
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10 // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/text v0.3.8 // indirect
 	golang.org/x/time v0.0.0-20220224211638-0e9765cccd65 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.2.0 // indirect
 	gomodules.xyz/jsonpatch/v3 v3.0.1 // indirect
@@ -106,7 +106,7 @@ require (
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/ini.v1 v1.66.4 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.1.0 // indirect
 	k8s.io/cloud-provider v0.22.4 // indirect
 	k8s.io/kube-openapi v0.0.0-20220124234850-424119656bbf // indirect
