@@ -1,12 +1,14 @@
 ARG BASEIMAGE=gcr.io/distroless/static:nonroot
-ARG BASE_ALPINE=alpine:3.18.4
-ARG GO_VERSION=1.21.3
+ARG BASE_ALPINE=alpine:3.20.3
+ARG GO_VERSION=1.23.1
 
 # -------
 # Builder
 # -------
-FROM golang:${GO_VERSION} AS base_builder
+FROM --platform=$BUILDPLATFORM golang:${GO_VERSION} AS base_builder
 ARG PACKAGE
+ARG TARGETOS
+ARG TARGETARCH
 
 WORKDIR /go/src/${PACKAGE}
 ADD go.mod go.sum /go/src/${PACKAGE}/
@@ -20,7 +22,8 @@ ARG BUILD_SUB_TARGET
 WORKDIR /go/src/${PACKAGE}
 
 ADD . .
-RUN GIT_TAG=${VCS_REF} make build${BUILD_SUB_TARGET}
+RUN GOOS=${TARGETOS} GOARCH=${TARGETARCH} GIT_TAG=${VCS_REF} make build${BUILD_SUB_TARGET}
+
 
 # ------------
 # Env Injector
